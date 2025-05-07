@@ -71,6 +71,75 @@
     .swiper {width: 100%; padding: 30px 0;}
     .swiper-slide img {width: 100%; max-width: 100px; height: auto; margin: 0 auto; display: block; transition: transform 0.3s ease;}
     .swiper-slide img:hover {transform: scale(1.05);}
+    .testimonials {
+  text-align: center;
+  padding: 50px 20px;
+  background: linear-gradient(to top, #dbeafe, #fff);
+}
+
+.testimonials h2 {
+  color: #e6005a;
+  font-size: 2rem;
+  margin-bottom: 40px;
+}
+
+.testimonial-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.testimonial-card {
+  background: #fff;
+  border-radius: 20px;
+  padding: 25px;
+  max-width: 300px;
+  width: 100%;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.08);
+  border: 2px solid #e0e0e0;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.testimonial-card:hover {
+  transform: translateY(-5px);
+}
+
+.testimonial-card img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 15px;
+  border: 3px solid #e6005a;
+}
+
+.testimonial-card p {
+  font-size: 0.95rem;
+  color: #333;
+  margin-bottom: 15px;
+  font-style: italic;
+}
+
+.testimonial-card h4 {
+  margin: 0;
+  font-size: 1.1rem;
+  color: #000;
+}
+
+.testimonial-card span {
+  font-size: 0.9rem;
+  color: #777;
+}
+
+@media (max-width: 768px) {
+  .testimonial-container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
 
     footer {
       background: #0077b6;
@@ -136,17 +205,30 @@
     </div>
   </section>
 
-  <section class="case">
-    <h2>Depoimentos</h2>
-    <div class="steps">
-      <div class="step">
-        <p>"O chatbot da OnBoot transformou nosso atendimento!" — <strong>Maria Oliveira</strong></p>
-      </div>
-      <div class="step">
-        <p>"Simples, rápido e inteligente. Me surpreendeu." — <strong>João Silva</strong></p>
-      </div>
+  <section class="testimonials">
+  <h2>O que nossos usuários dizem?</h2>
+  <div class="testimonial-container">
+    <div class="testimonial-card">
+      <img src="images/user1.jpg" alt="Nat Reynolds">
+      <p>“O chatbot da OnAI transformou nosso atendimento!”</p>
+      <h4>Nat Reynolds</h4>
+      <span>Consultor chefe</span>
     </div>
-  </section>
+    <div class="testimonial-card">
+      <img src="images/user2.jpg" alt="Celia Almeida">
+      <p>“Simples, rápido e inteligente. Me surpreendeu.”</p>
+      <h4>Celia Almeida</h4>
+      <span>Serviços</span>
+    </div>
+    <div class="testimonial-card">
+      <img src="images/user3.jpg" alt="Bob Roberts">
+      <p>“Recomendo demais. Atendimentos automáticos com qualidade.”</p>
+      <h4>Bob Roberts</h4>
+      <span>Gerente de vendas</span>
+    </div>
+  </div>
+</section>
+
 
   <section class="case">
     <h2>O que fazemos</h2>
@@ -165,7 +247,7 @@
 </main>
 
 <footer>
-  <p>&copy; 2025 OnAI. Todos os direitos reservados.</p>
+  <p>&copy; 2024 OnBoot. Todos os direitos reservados.</p>
 </footer>
 
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
