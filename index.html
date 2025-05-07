@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Automação Digital de alta performance com chatbots inteligentes para WhatsApp, Instagram e sites. Descubra como a OnBoot pode transformar seu atendimento.">
+  <meta name="description" content="Automação Digital de alta performance com chatbots inteligentes para WhatsApp, Instagram e sites. Descubra como a OnAI pode transformar seu atendimento.">
   <meta property="og:title" content="OnBoot - Automação Digital com IA">
   <meta property="og:description" content="Chatbots inteligentes e automação de atendimento para escalar seu negócio.">
   <meta property="og:image" content="images/ogimage.jpg">
@@ -30,7 +30,7 @@
       content: "";
       position: absolute;
       top: 0; left: 0; right: 0; bottom: 0;
-      background-color: rgba(0, 0, 0, 0.4);
+      background:url('images/background.png') no-repeat center center/cover;
       z-index: 1;
     }
 
@@ -56,22 +56,20 @@
 
     .case {
       background: #f1faff;
-      border-left: 6px solid #0077b6;
-      margin: 30px auto;
-      padding: 30px 20px;
-      border-radius: 16px;
-      max-width: 900px;
-      box-shadow: 0 0 12px rgba(0,0,0,0.05);
+      border: 1px solid #00b4d8;
+      margin: 20px auto;
+      padding: 20px;
+      border-radius: 12px;
+      max-width: 850px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
     }
-    .case h2 {font-size: 1.8rem; color: #0077b6; margin-bottom: 15px;}
-    .case p, .case li {font-size: 1rem; color: #444; line-height: 1.6; margin-bottom: 10px;}
-
+    .case h2 {font-size: 1.6rem; color: #0077b6; margin-bottom: 12px;}
+    .case p, .case li {font-size: 0.95rem; color: #444; line-height: 1.6; margin-bottom: 8px;}
     .case ul {text-align: left; padding-left: 20px;}
-
-    .steps .step {margin-bottom: 20px;}
+    .steps .step {margin-bottom: 15px;}
 
     .swiper {width: 100%; padding: 30px 0;}
-    .swiper-slide img {width: 100%; max-width: 120px; height: auto; margin: 0 auto; display: block; transition: transform 0.3s ease;}
+    .swiper-slide img {width: 100%; max-width: 100px; height: auto; margin: 0 auto; display: block; transition: transform 0.3s ease;}
     .swiper-slide img:hover {transform: scale(1.05);}
 
     footer {
@@ -88,7 +86,8 @@
 
     @media (max-width: 768px) {
       header h1 {font-size: 2rem;}
-      .case {padding: 20px 15px;}
+      .case {padding: 16px 12px; margin: 16px;}
+      .buttons a {font-size: 0.95rem; padding: 10px 20px;}
     }
   </style>
 </head>
@@ -109,7 +108,7 @@
   <section class="case">
     <h2>O que é um Chatbot com IA?</h2>
     <p>É um robô de atendimento que entende e responde mensagens automaticamente, 24 horas por dia.</p>
-    <p>Com IA, ele entende perguntas, oferece soluções rápidas e ainda aprende com cada conversa.</p>
+    <p>Com IA, ele entende perguntas, oferece soluções rápidas e ainda aprende com cada conversa ,seja escrita ou áudio.</p>
   </section>
 
   <section class="case">
@@ -139,8 +138,14 @@
 
   <section class="case">
     <h2>Depoimentos</h2>
-    <p>"O chatbot da OnBoot transformou nosso atendimento!" — <strong>Maria Oliveira</strong></p>
-    <p>"Simples, rápido e inteligente. Me surpreendeu." — <strong>João Silva</strong></p>
+    <div class="steps">
+      <div class="step">
+        <p>"O chatbot da OnBoot transformou nosso atendimento!" — <strong>Maria Oliveira</strong></p>
+      </div>
+      <div class="step">
+        <p>"Simples, rápido e inteligente. Me surpreendeu." — <strong>João Silva</strong></p>
+      </div>
+    </div>
   </section>
 
   <section class="case">
@@ -160,7 +165,7 @@
 </main>
 
 <footer>
-  <p>&copy; 2025 OnBoot. Todos os direitos reservados.</p>
+  <p>&copy; 2025 OnAI. Todos os direitos reservados.</p>
 </footer>
 
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
@@ -181,3 +186,4 @@
 
 </body>
 </html>
+
